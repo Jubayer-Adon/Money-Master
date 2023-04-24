@@ -13,6 +13,91 @@
     <title>Money Master</title>
   </head>
   <body>
+    <header>
+      <div class="text-center bg-info pt-3 pb-3 mt-1">
+        <h2 class="">Dream will be fulfilled</h2>
+      </div>
+    </header>
+    <section>
+      <div class="row row-cols-1 row-cols-sm-2 g-4 m-3">
+        <div class="col-7">
+          <div class="card h-100">
+            <img src="img/bank.jpg" class="card-img-top" alt="" />
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card h-100 p-3 bg-light">
+            <h4 class="text-center mt-2 mb-0" style="font-weight: 610">
+              Income
+            </h4>
+            <div class="input-group mt-1 w-75">
+              <span class="input-group-text p-3">Monthly Income</span>
+              <input type="number" id="income" value="0" class="form-control" />
+            </div>
+            <h4 class="text-center mt-3">Expense</h4>
+            <div class="input-group mt-1 w-75">
+              <span class="input-group-text p-3">Food Expense</span>
+              <input
+                type="number"
+                value="0"
+                id="foods"
+                class="form-control input-size"
+              />
+            </div>
+            <div class="input-group mt-3 w-75">
+              <span class="input-group-text p-3">Rent Expense</span>
+              <input
+                type="number"
+                value="0"
+                id="rent"
+                class="form-control input-size"
+              />
+            </div>
+            <div class="input-group mt-3 w-75">
+              <span class="input-group-text p-3">Cloth & Others</span>
+              <input
+                type="number"
+                id="clothes"
+                value="0"
+                class="form-control input-size"
+              />
+            </div>
+            <button class="btn btn-primary m-4 p-2" onclick="calculate()">
+              Calculate
+            </button>
+            <div>
+              <h5 class="text-center">
+                Total Expenses: TK. <span id="expenses">00</span>
+              </h5>
+              <h5 class="text-center">
+                Balance: TK. <span id="balance">00</span>
+              </h5>
+            </div>
+            <div class="d-flex justify-content-evenly">
+              <div class="input-group col col-lg-4 mt-3 w-50 ms-5">
+                <span class="input-group-text mb-0">Save</span>
+                <input
+                  id="save-input"
+                  type="number"
+                  value="0"
+                  class="form-control input-size"
+                />
+              </div>
+              <span>%</span>
+              <button id="save" class="btn btn-primary m-4 p-2">Save</button>
+            </div>
+            <div class="mt-3">
+              <h5 class="text-center">
+                Saving Amount: TK. <span id="saved-balance">00</span>
+              </h5>
+              <h5 class="text-center">
+                Remaining Balance: TK. <span id="last-balance">00</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
